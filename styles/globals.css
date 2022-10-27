@@ -13,14 +13,29 @@ a {
 
 * {
   box-sizing: border-box;
+} 
+
+body,
+body[data-theme="light"] {
+  --color-text-primary: #27201a;
+  --color-text-secondary: #27201a;
+  --color-bg-primary: #fff;
+  --color-bg-toggle: #222;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+body[data-theme="dark"] {
+  --color-text-primary: #e3e3e3;
+  --color-text-secondary: #e3e3e3;
+  --color-bg-primary: #15232d;
+  --color-bg-toggle: #222;
+}
+body {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: sans-serif;
+  transition: background 0.25s ease-in-out;
+}
+
+h1 {
+  color: var(--color-text-secondary);
 }
