@@ -50,7 +50,6 @@ const ToggleThumb = styled.span`
 const ThemeToggle = () => {
   const dispatch = useAppDispatch();
   let activeTheme = useAppSelector(getToggle);
-  // const [activeTheme, setActiveTheme] = useState("light");
   const inactiveTheme = activeTheme === "light" ? "dark" : "light";
 
   useEffect(() => {
