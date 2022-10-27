@@ -32,7 +32,7 @@ const ToggleButton = styled.button`
   },
 `;
 
-const ToggleThumb = styled.span`
+const ToggleThumb: any = styled.span`
   position: absolute;
   top: 2px;
   left: var(--toggle-padding);
@@ -41,16 +41,16 @@ const ToggleThumb = styled.span`
   border-radius: 50%;
   background: white;
   transition: transform 0.25s ease-in-out;
-  transform: ${(p) =>
-    p.activeTheme === "dark"
+  transform: ${(p: any) =>
+    p?.activeTheme === "dark"
       ? "translate3d(calc(var(--toggle-width) - var(--toggle-height)), 0, 0)"
       : "none"};
 `;
 
 const ThemeToggle = () => {
-  const dispatch = useAppDispatch();
-  let activeTheme = useAppSelector(getToggle);
-  const inactiveTheme = activeTheme === "light" ? "dark" : "light";
+  const dispatch: any = useAppDispatch();
+  let activeTheme: any = useAppSelector(getToggle);
+  const inactiveTheme: any = activeTheme === "light" ? "dark" : "light";
 
   useEffect(() => {
     document.body.dataset.theme = activeTheme;
