@@ -53,3 +53,6 @@ body {
 h1 {
   color: var(--color-text-secondary);
 }
+p {
+  font-family: 'Merriweather','Georgia',serif;
+}

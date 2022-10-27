@@ -22,13 +22,13 @@ export default function ({ children }: any) {
           box-shadow: none;
           text-decoration: none;
           color: rgb(34, 34, 34);
+          font-size: 2.8rem;
+          line-height: 2.625rem;
         }
         .homepage-link {
           box-shadow: none;
           text-decoration: none;
           color: var(--color-text-secondary);
-          font-size: 1.98818rem;
-          line-height: 2.625rem;
         }
       `}</style>
     </header>

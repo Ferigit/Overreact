@@ -8,8 +8,8 @@ export default function Layout({ children }: any) {
         .layout-content {
           margin-left: auto;
           margin-right: auto;
-          max-width: 42rem;
-          padding: 1.725rem 1.3125rem;
+          max-width: 53rem;
+          padding: 2.725rem 0px;
         }
       `}</style>
     </div>
